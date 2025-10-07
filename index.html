@@ -10,8 +10,32 @@ Life Super App homepage-->
     crossorigin="anonymous">
 </head>
 <body>
-    <header class="container mb-4" id="home-header">
-        
+    <header class="container text-center mb-4" id="home-header">
+        <div class="row">
+            <div class="col-1 header-weather-link">
+                <nav>
+                    <button type="button" class="btn header-button">
+                        <a href="dining.html" class="header-link">
+                            <p class="header-text">Dining</p>
+                        </a>
+                    </button>
+                </nav>
+            </div>
+            <div class="col-1 header-weather-link">
+                <nav>
+                    <button type="button" class="btn header-button">
+                        <a href="weather.html" class="header-link">
+                            <p class="header-text">Weather</p>
+                        </a>
+                    </button>
+                </nav>
+            </div>
+            <div class="col-10 header-page-label">
+                <p class="page-label-text">
+                    Home
+                </p>
+            </div>
+        </div>
     </header>
     <main>
         <div class="container mb-4" id="home-main-cont">
@@ -34,24 +58,50 @@ Life Super App homepage-->
                     src="src/sturtevant-snow.jpg">
                 </div>
             </div>
-        </div> 
-        <div class="container text-center mb-4" id="home-ind-cont">
-            <div class="row">
-                <div class="col-6" id="home-ind-art-text">
-                    <article>    
-                        <button type="button" class="btn">
-                            <a href="dining.html">
-                                <h2 id="home-ind-dining-title">Dining</h2>
-                            </a>
-                            <p>As a college student, dining can be a drag. Keeping 
-                                track of meal schedules and menus can be pretty overwhelming.
-                                Luckily, we have plenty of resources to make dining at IC as easy as 
-                                one, two, three!
-                            </p>
-                        </button>
-                    </article>
+        </div>
+        <article> 
+            <div class="container text-center mb-4" id="home-ind-cont">
+                <div class="row">
+                    <h1 id="home-resources-title">Resources</h1>
+                </div>
+                <div class="row">
+                    <div class="col-6" id="home-ind-dining-art-text">
+                        <article>    
+                            <button type="button" class="btn">
+                                <nav>
+                                    <a href="dining.html">
+                                        <h2 id="home-ind-dining-title">Dining</h2>
+                                    </a>
+                                </nav>
+                                <p>As a college student, dining can be a drag. Keeping 
+                                    track of meal schedules and menus can be pretty overwhelming.
+                                    Luckily, we have plenty of resources to make dining at IC as easy as 
+                                    one, two, three!
+                                </p>
+                            </button>
+                        </article>
+                    </div>
+                    <div class="col-6" id="home-ind-weather-art-text">
+                        <article>
+                            <button type="button" class="btn">
+                                <nav>
+                                    <a href="weather.html">
+                                        <h2 id="home-ind-art-weather-title">Weather</h2>
+                                    </a>
+                                </nav>
+                                <p>Walking across campus in bad weather sucks. As a college
+                                    student, you'll have to beat the heat and weather plenty of storms.
+                                    Good thing we've got plenty advice and resources to make sure you're prepared for 
+                                    anything from sunshine to snowstorms.
+                                </p>
+                            </button>
+                        </article>
+                    </div>
                 </div>
             </div>
-        </div>
+        </article>
     </main>
+    <footer>
+        
+    </footer>
 </body>
