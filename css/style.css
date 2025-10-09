@@ -23,3 +23,26 @@ header {
     color: white;
     text-align: center;
 }
+
+.index-nav-btn {
+    background-color: white;
+}
+.ind-resource-link {
+    color: black;
+}
+
+h2 {
+    background-color: white;
+    font-family: sans-serif;
+}
+
+.article-content {
+    background-color: rgb(207, 206, 206);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 5%;
+}
+
+.fw-bold {
+    font-family: Cambria;
+}
