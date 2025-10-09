@@ -1,0 +1,25 @@
+body {
+    background-color: lightblue;
+}
+
+header {
+    background-color: rgb(1, 1, 84);
+}
+
+.header-link {
+    background-color: rgb(171, 171, 171);
+    font-size: 30px;
+    color:black;
+}
+
+.header-page-label {
+    font-size: 40px;
+    color: white;
+}
+
+.page-main-title {
+    font-size: 40px;
+    background-color: rgb(1, 1, 84);
+    color: white;
+    text-align: center;
+}
