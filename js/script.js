@@ -37,9 +37,9 @@ async function displayForecast() {
     const forecastData = await fetchForecast()
     console.log(forecastData);
 
-    forecastOutput.innerHTML = "<ul>";
+    forecastOutput.innerHTML = '<ul class="article-content">';
     for (let i = 0; i < forecastData.names.length; i++) {
-        forecastOutput.innerHTML += `<li>${forecastData.names[i]}</li><p>${forecastData.forecast[i]}</p>`
+        forecastOutput.innerHTML += `<li class="fw-bold">${forecastData.names[i]}</li><p>${forecastData.forecast[i]}</p>`
     }
     forecastOutput.innerHTML += "</ul>"
 }
