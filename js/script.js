@@ -44,4 +44,28 @@ async function displayForecast() {
     forecastOutput.innerHTML += "</ul>"
 }
 
+// Add event listener to header and footer button containers 
+// to change color on mouseover
+const header_footer_links = document.querySelectorAll(".header-link");
+header_footer_links.forEach(function(link) {
+    link.addEventListener("mouseover", function() {
+        link.style.backgroundColor = "rgb(200, 200, 200)";
+    });
+    link.addEventListener("mouseout", function() {
+        link.style.backgroundColor = "rgb(171, 171, 171)";
+    });
+})
+
+// Add event listeners on index.html resource buttons to 
+// change color on mouseover
+const indRsrcBtns = document.querySelectorAll(".index-nav-btn");
+indRsrcBtns.forEach(function(button) {
+    button.addEventListener("mouseover", function() {
+        button.style.backgroundColor = "rgb(200, 200, 200)";
+    });
+    button.addEventListener("mouseout", function() {
+        button.style.backgroundColor = "white";
+    });
+})
+
 displayForecast();

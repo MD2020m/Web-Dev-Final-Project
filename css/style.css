@@ -31,8 +31,11 @@ header {
     color: black;
 }
 
-h2 {
+.dining-section-title {
     background-color: white;
+}
+
+h2 {
     font-family: sans-serif;
 }
 
@@ -40,7 +43,7 @@ h2 {
     background-color: rgb(207, 206, 206);
     font-family:'Times New Roman', Times, serif;
     font-size: 20px;
-    padding: 15%;
+    padding: 5%;
 }
 
 .fw-bold {
