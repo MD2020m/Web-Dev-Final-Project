@@ -39,11 +39,10 @@ async function displayForecast() {
     const forecastOutput = document.getElementById("weather-rprt-div");
     const forecastData = await fetchForecast()
 
-    forecastOutput.innerHTML = '<ul class="article-content">';
+    //forecastOutput.innerHTML = '<ul class="article-content">';
     for (let i = 0; i < forecastData.names.length; i++) {
-        forecastOutput.innerHTML += `<li class="fw-bold">${forecastData.names[i]}</li><p>${forecastData.forecast[i]}</p>`
+        forecastOutput.innerHTML += `<p class="fw-bold">${forecastData.names[i]}</p><p>${forecastData.forecast[i]}</p>`;
     }
-    forecastOutput.innerHTML += "</ul>"
 }
 
 // Async function to fetch current time for US/Chicago timezone 
