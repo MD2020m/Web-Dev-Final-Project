@@ -65,9 +65,12 @@ async function displayTime() {
     const timeOutput = document.getElementById("dining-time-output");
     const timeData = await fetchTime();
 
+    // Convert day_of_week numbers to weekday names
     const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const day = weekdays[timeData.day];
 
+    // Output timeData for testing purposes. API currently performing unreliably
+    // Will check for different API if problems presist
     console.log(timeData);
 
     timeOutput.innerHTML = "";
