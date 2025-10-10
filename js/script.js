@@ -50,11 +50,7 @@ async function displayForecast() {
 // from world time API
 async function fetchTime() {
     const response = await fetch(worldTimeURL);
-    const timeData = await response.json();
-
-    // Regex to extract time from datetime string
-    const regex = /([0,1,2,3,4,5,6,7,8,9][0,2,3,4,5,6,7,8,9]:[0,1,2,3,4,5,6,7,8,9][0,1,2,3,4,5,6,7,8,9]:[0,1,2,3,4,5,6,7,8,9][0,1,2,3,4,5,6,7,8,9])/;
-    
+    const timeData = await response.json();    
 
     time = {
         "day": timeData.day_of_week,
