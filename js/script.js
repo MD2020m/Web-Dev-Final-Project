@@ -21,7 +21,7 @@ async function fetchForecast() {
     // Retrieve data from forecast endpoint response
     let names = [];
     let detailed_forecasts = [];
-    period_forecasts.forEach(function(period) {
+    period_forecasts.slice(0,6).forEach(function(period) {
         names.push(period.name);
         detailed_forecasts.push(period.detailedForecast);
     });
