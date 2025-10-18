@@ -1,8 +1,12 @@
 body {
+    margin: 0px;
+    padding: 0px;
     background-color: lightblue;
 }
 
 header {
+    position: relative;
+    width: 100%;
     background-color: rgb(1, 1, 84);
 }
 
@@ -48,4 +52,48 @@ h2 {
 
 .fw-bold {
     font-family: Cambria;
+}
+
+#weather-rprt-div {
+    border-radius: 20px;
+}
+
+@media (max-width: 600px) {
+    .article-content {
+        font-size: 15px;
+    }
+
+    .header-text {
+        font-size: 20px;
+    }
+
+    .off-campus-section {
+        display: flex;
+        justify-content: center;
+    }
+    .off-campus-img {
+        display: flex;
+        justify-content: center;
+        width: 60%
+    }
+    
+    .off-campus-article {
+        width: 100%;
+    }
+
+    .dining-hours-section {
+        display: flex;
+        width:100%;
+        justify-content: center;
+    }
+
+    #dining-overview-article {
+        width: 100%;
+    }
+
+    #dining-overview-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }

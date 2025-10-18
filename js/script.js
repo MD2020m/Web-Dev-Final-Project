@@ -53,7 +53,7 @@ async function fetchTime() {
 
     time = {
         "day": timeData.day_of_week,
-        "time": timeData.datetime.substring(11,16)//.match(regex)
+        "time": timeData.datetime.substring(11,16)
     };
 
     return time;
